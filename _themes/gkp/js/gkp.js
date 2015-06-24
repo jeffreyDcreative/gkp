@@ -204,6 +204,12 @@ var flexasaurus = function () {
 var flexTamer = function () {
     $("ul.slides li").removeAttr("style");
     $('.flex-control-nav').css({"display":"none"});
+    $('[data-original]').each(function() {
+    var $el = $(this);
+    var val = $el.attr('data-original');
+    $el.removeAttr('data-original')
+       .attr('src', val);
+});
 }
 
 
@@ -211,7 +217,14 @@ var flexLoader = function () {
             $('.flexslider').flexslider({
                 animation: "fade",
                 slideshow: false,
-                animationLoop: false
+                animationLoop: false,
+                /// LAZY FLEXLOADER
+                start: function(slider) {
+                    $.flexloader(slider);
+                },
+                after: function(slider) {
+                    $.flexloader(slider);
+                }
             });
             if ( windowSize < mobileBreakPoint) {
                 flexTamer();
@@ -225,6 +238,13 @@ var flexLoaderPort = function () {
         manualControls: '.custom-controls li a',
         controlsContainer: '.flex-container',
         animationLoop: false, 
-        slideshow: false
+        slideshow: false,
+         /// LAZY FLEXLOADER
+                start: function(slider) {
+                    $.flexloader(slider);
+                },
+                after: function(slider) {
+                    $.flexloader(slider);
+                }
     });
 }
