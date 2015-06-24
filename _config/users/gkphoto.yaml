@@ -1,0 +1,12 @@
+---
+email: gretchen.kelley@gmail.com
+first_name: Gretchen
+last_name: Kelley
+password: ""
+password_hash: $2a$08$yU3vT.Y6KNlKT2OB8RURvOcU6WOG7Ex0N8v5fpH6w.HQOXZr7FDmu
+roles:
+  - member
+  - admin
+_uid: 1KMlwV53bedd8047459v2zhPmrV
+---
+Have no fears, your password, while plain text to start, will be encrypted upon first login. If ever you need to manually reset a password you can wipe out the password fields and start anew.

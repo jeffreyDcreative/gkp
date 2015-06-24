@@ -1,0 +1,9 @@
+hide: true
+include:
+  - no_content
+  - no_slug
+  - page_title
+  - about
+  - contact_methods
+  - form
+  - meta

@@ -1,0 +1,27 @@
+<!-- Navigation -->
+{{ theme:partial src="main-nav" }}
+<!-- Home Page -->
+{{ if !segment_1 }}
+{{ theme:partial src="featured-gallery" }}
+{{ endif }}
+<!-- Portfolio -->
+{{ if segment_1 === "portfolio" }}
+{{ theme:partial src="sub-nav" }}
+{{ theme:partial src="gallery" }}
+{{ endif }}
+<!-- Contact Page -->
+{{ if segment_1 === "contact" }}
+{{ theme:partial src="page-title" }}
+{{ theme:partial src="contact" }}
+{{ endif }}
+<!-- Standard Page -->
+{{ if segment_1 && segment_1 !== "portfolio" && segment_1 !== "contact" && segment_2 !== "" }}
+{{ if page_title_include == 1 }}
+{{ theme:partial src="page-title" }}
+{{ endif }}
+{{ theme:partial src="standard-page" }}
+{{ endif }}
+
+<!-- Category List and Footer Appear on All Pages -->
+{{ theme:partial src="category-list" }}
+{{ theme:partial src="footer" }}

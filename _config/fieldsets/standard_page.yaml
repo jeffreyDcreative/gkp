@@ -1,0 +1,35 @@
+fields:
+  page_title_section:
+    type: section
+    display: Page Title Section
+    instructions: If you want to include a purple page title section (see contact page)
+  page_title:
+    type: text
+    display: Page Title Heading
+    instructions: 
+      below: Appears in purple bar at top of page.
+    default:
+  page_title_image:
+    display: Page Title Background Image
+    type: file
+    allowed: [png, gif, jpg, jpeg]
+    destination: assets/img
+    instructions:
+      below: leave blank and default purple background will load
+    show_thumbnail: true
+  page_title_include:
+    type: checkbox
+    display: Include Purple Page Header
+    instructions: Check the to box to include
+    width: 10px
+  page_content_section:
+    type: section
+    display: Add Content to Page  
+  page_content:
+    type: redactor
+    display: Page Content
+    image_dir: assets/portfolio/img
+
+include:
+  - no_content
+  - meta

@@ -1,0 +1,20 @@
+hide: true
+fields:
+
+  page_title_section:
+    type: section
+    display: Page Title Section
+  page_title:
+    type: text
+    display: Page Title Heading
+    instructions: 
+      below: Appears in purple bar at top of page.
+    default: Page Title
+    required: true
+  page_title_image:
+    display: Page Title Background Image
+    type: file
+    allowed: [png, gif, jpg, jpeg]
+    destination: assets/img
+    show_thumbnail: true
+    

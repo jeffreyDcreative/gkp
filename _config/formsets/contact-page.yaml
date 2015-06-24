@@ -1,0 +1,40 @@
+submission_save_path: _forms/
+submission_save_extension: yaml
+send_notification_email: true
+
+allowed:
+  - name
+  - email
+  - phone
+  - message
+
+required:
+  - email
+  - message
+
+validate:
+  email: email
+
+# Configure notification email
+email:
+  to: jeffreyd@jeffreydcreative.com
+  from: jeffreyd@jeffreydcreative.com # "{{ email }}"
+  subject: Contact Form Submission
+  automagic: true
+  # html_template: html_email
+  # text_template: text_email
+
+datestamp_format: "m/d/Y"
+
+control_panel:
+  fields:
+    name: Name
+    email: Email Address
+    phone: Phone #
+    message: Form Message
+    
+  metrics:
+    -
+      type: count
+      field: email
+      label: Total Submissions

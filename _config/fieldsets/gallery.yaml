@@ -1,0 +1,53 @@
+title: Photo Gallery
+hide: true
+fields:
+  title:
+    display: Category Name
+  gallery_section:
+    type: section
+    display: Photo Gallery
+  browse_text:
+    type: text
+    display: Gallery Thumbnail Heading
+    default: "[Insert Portfolio Category Here]" Photography
+    width: 30%
+    instructions:
+      below: This field allows you to edit Thumbnail Gallery Heading.
+  gallery:
+    display: Photo Gallery
+    type: grid
+    starting_rows: 1
+    min_rows: 1
+    fields:
+      photo_large:
+        type: file
+        display: Photo
+        destination: assets/portfolio/img
+        show_thumbnail: true
+      photo_thumbnail:
+        type: file
+        display: Thumbnail
+        destination: assets/portfolio/img
+        show_thumbnail: true
+      photo_alt:
+        type: textarea
+        display: Photo Description
+        default: Photo
+        instructions: 
+          below: 'Enter a short description of the photo for SEO purposes. (ex: "Photo of Save The Clocktower at Lincoln Hall")'
+        width: 300px
+        height: 2000px
+      feature:
+            type: checkbox
+            display: Feature
+            instructions: Check to Feature on Home Page
+            width: 10px
+      feature_order:
+            type: select
+            display: Feature Order
+            instructions: 
+              below: Order in which featured photos will be displayed
+            width: 10px
+            options: [null,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+

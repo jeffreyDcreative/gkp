@@ -1,0 +1,10 @@
+    <div id="carousel-thumb-control">
+        <div class="container">
+            <h1>{{ browse_text }}</h1>
+              <ul class="custom-controls clearfix" >
+{{ gallery }}
+                <li><a href="#main" class="scroll"><img class="gallery-thumb {{ if first }}active{{ endif }}" data-large-src="{{ photo_large }}" data-thumb-src="{{ photo_thumbnail }}" src="{{ if first }}{{ photo_large }}{{ else }}{{ photo_thumbnail }}{{ endif }}" alt="" /></a></li>
+{{ /gallery }}{{ killwhite }}
+{{ /killwhite }}            </ul>
+        </div>
+    </div>

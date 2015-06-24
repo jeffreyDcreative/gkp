@@ -1,0 +1,26 @@
+hide: true
+fields:
+  category_list_heading:
+    type: text
+    display: Category List Heading
+    default: Browse Work by Category
+    instructions:
+      below: this text appears above the list of all the categories. The default is "Browse Work By Category"
+  cta_button_text:
+    type: text
+    default: "Let's Work Together"
+    instructions:
+      below: this text appears inside the purple button that appears on all pages
+  website_name:
+    type: text
+    display: Website Name
+    default: Gretchen Kelley Photography
+  four_oh_four_image:
+    type: file
+    display: 404 Image
+    destination: assets/img
+    show_thumbnail: true
+
+include:
+  - no_content
+  - no_slug

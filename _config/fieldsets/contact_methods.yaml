@@ -1,0 +1,43 @@
+hide: true
+fields:
+  contact_methods:
+    display: Contact Methods
+    type: grid
+    starting_rows: 2
+    min_rows: 1
+    max_rows: 6
+    fields:
+      contact_method_heading_type:
+        type: select
+        display: Select Method Type
+        instructions: Select a Method type
+        options:
+          phone: "phone number"
+          email: email address
+          link: "external link"
+          plain: Plain text
+        required: true
+        width: 15%
+      contact_method_heading:
+        type: text
+        display: Heading
+        instructions: "Ex. Phone Number, Twitter"
+        required: true
+        width: 15%
+      contact_method_details:
+        type: text
+        display: Details
+        instructions:  "ex: 555-555-5555, @twitter, etc."
+        required: true
+        width: 30%
+      contact_method_link:
+        type: text
+        display: Link
+        instructions: "Only necessary when the selected method type is external link"
+        default: "http://www.siteaddress.com"
+        width: 20%
+      contact_method_display:
+        type: checkbox
+        display: Add to Footer
+        instructions: Check to add
+        width: 10%

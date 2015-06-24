@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<!-- <base href="http://localhost/gretchenkelley/design/" /> -->
+    <title>{{ killwhite }}{{ if meta_title }}{{ meta_title|widont }}{{ else }}{{ if segment_2 }}
+                {{segment_2|title}} 
+            {{ endif }}
+            {{ if segment_1 }}
+                {{ segment_1|title }}  &mdash;
+            {{ endif }}
+            {{ get_content from="/site-wide" show_hidden="true"}}
+                {{ website_name }}
+            {{ /get_content }}{{ endif }}{{ /killwhite }}</title>
+    <meta name="description" content="{{ meta_description }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ _site_root }}/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="{{ _site_root }}/favicon.ico"/>
+    <meta name="msapplication-TileColor" content="#603cba"><meta name="msapplication-TileImage" content="{{ _site_root }}/mstile-144x144.png">
+	<link href="{{ theme:css src="reset" }}" rel="stylesheet" type="text/css">
+	<link href="{{ theme:css src="flexslider" }}" rel="stylesheet" type="text/css">
+	<link href="{{ theme:css src="sub-slider" }}" rel="stylesheet" type="text/css">
+	<link href="{{ theme:css src="novecento-webfont" }}" rel="stylesheet" type="text/css">
+	<link href="{{ theme:css }}" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="{{ theme:js src="jquery.flexslider" }}"></script>
+</head>
+<body class="four-oh-four">
+{{ if ! segment_1 || segment_1 === "portfolio" }}
+<script>
+{{ if ! segment_1 }}
+    $(window).load(function() {
+        flexLoader();
+    });
+{{ else }}
+    $(window).load(function() {
+        flexLoaderPort();
+    });
+{{ endif }}
+</script>
+{{ endif }}
+{{ layout_content }}<script src="{{ theme:js }}"></script>
+</body>
+</html>

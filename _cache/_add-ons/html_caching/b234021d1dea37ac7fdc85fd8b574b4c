@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<!-- <base href="http://localhost/gretchenkelley/design/" /> -->
+    <title>Fashion Portfolio &mdash; Gretchen Kelley Photography</title>
+    <meta name="description" content="View Gretchen Kelley's Fashion Photography Portfolio.">
+    <link rel="apple-touch-icon" sizes="114x114" href="/gkp//apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="/gkp//favicon.ico"/>
+    <meta name="msapplication-TileColor" content="#603cba"><meta name="msapplication-TileImage" content="/gkp//mstile-144x144.png">
+	<link href="/gkp/_themes/gkp/css/reset.css" rel="stylesheet" type="text/css">
+	<link href="/gkp/_themes/gkp/css/flexslider.css" rel="stylesheet" type="text/css">
+	<link href="/gkp/_themes/gkp/css/sub-slider.css" rel="stylesheet" type="text/css">
+	<link href="/gkp/_themes/gkp/css/novecento-webfont.css" rel="stylesheet" type="text/css">
+	<link href="/gkp/_themes/gkp/css/gkp.css" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="/gkp/_themes/gkp/js/jquery.flexslider.js"></script>
+</head>
+<body>
+<script>
+    $(window).load(function() {
+        flexLoaderPort();
+    });
+</script>
+<!-- Navigation -->
+<div id="header">
+    <div class="container has-sub-nav">
+        <nav role="navigation">
+            <h1><a href="/gkp/"><img class="logo" src="/gkp/_themes/gkp/img/gkp.svg" alt="Gretchen Kelley Photography" width= "363" height="14"></a></h1>
+            <ul id="nav">
+                <li><a href="/gkp/contact">Contact</a></li>
+                <li><a href="/gkp/portfolio" class="selected">Portfolio</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!-- Home Page -->
+<!-- Portfolio -->
+<div id="sub-nav">
+    <div class="container clearfix">
+        <ul>
+            <li><a href="/gkp/portfolio/live-music">Live Music</a></li>
+            <li><a href="/gkp/portfolio/performance">Performance</a></li>
+            <li><a class="active" href="#" href="/gkp/portfolio/fashion">Fashion</a></li>
+            <li><a href="/gkp/portfolio/editorial">Editorial</a></li>
+            <li><a href="/gkp/portfolio/observation">Observation</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class"flex-container">
+    <div id="main">
+        <div class="container clearfix">
+            <div id="slider" class="flexslider" itemscope itemtype="http://schema.org/Photograph">
+                <ul class="slides">
+                    <li itemscope itemtype="http://schema.org/Photograph" ><img itemprop="image" src="/gkp/assets/portfolio/img/Heidi-2-large.jpg" alt="" />
+                        <meta itemprop="creator" content="Gretchen Kelley">
+                        <meta itemprop="copyrightHolder" content="Gretchen Kelley">
+                        <meta itemprop="copyrightYear" content="2014">
+                    </li>
+                    <li itemscope itemtype="http://schema.org/Photograph" ><img itemprop="image" src="/gkp/assets/portfolio/img/Jaime-2-large.jpg" alt="" />
+                        <meta itemprop="creator" content="Gretchen Kelley">
+                        <meta itemprop="copyrightHolder" content="Gretchen Kelley">
+                        <meta itemprop="copyrightYear" content="2014">
+                    </li>
+                    <li itemscope itemtype="http://schema.org/Photograph" ><img itemprop="image" src="/gkp/assets/portfolio/img/kristin-1-large.jpg" alt="" />
+                        <meta itemprop="creator" content="Gretchen Kelley">
+                        <meta itemprop="copyrightHolder" content="Gretchen Kelley">
+                        <meta itemprop="copyrightYear" content="2014">
+                    </li>
+                    <li itemscope itemtype="http://schema.org/Photograph" ><img itemprop="image" src="/gkp/assets/portfolio/img/Stacie-1-large.jpg" alt="" />
+                        <meta itemprop="creator" content="Gretchen Kelley">
+                        <meta itemprop="copyrightHolder" content="Gretchen Kelley">
+                        <meta itemprop="copyrightYear" content="2014">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="carousel-thumb-control">
+        <div class="container">
+            <h1>Fashion Photography</h1>
+              <ul class="custom-controls clearfix" >
+                <li><a href="#main" class="scroll"><img class="gallery-thumb active" data-large-src="/gkp/assets/portfolio/img/Heidi-2-large.jpg" data-thumb-src="/gkp/assets/portfolio/img/Heidi-2-thumb.jpg" src="/gkp/assets/portfolio/img/Heidi-2-large.jpg" alt="" /></a></li>
+                <li><a href="#main" class="scroll"><img class="gallery-thumb " data-large-src="/gkp/assets/portfolio/img/Jaime-2-large.jpg" data-thumb-src="/gkp/assets/portfolio/img/Jaime-2-thumb.jpg" src="/gkp/assets/portfolio/img/Jaime-2-thumb.jpg" alt="" /></a></li>
+                <li><a href="#main" class="scroll"><img class="gallery-thumb " data-large-src="/gkp/assets/portfolio/img/kristin-1-large.jpg" data-thumb-src="/gkp/assets/portfolio/img/kristin-1-thumb.jpg" src="/gkp/assets/portfolio/img/kristin-1-thumb.jpg" alt="" /></a></li>
+                <li><a href="#main" class="scroll"><img class="gallery-thumb " data-large-src="/gkp/assets/portfolio/img/Stacie-1-large.jpg" data-thumb-src="/gkp/assets/portfolio/img/Stacie-1-thumb.jpg" src="/gkp/assets/portfolio/img/Stacie-1-thumb.jpg" alt="" /></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Contact Page -->
+<!-- Standard Page -->
+
+<!-- Category List and Footer Appear on All Pages -->
+<div id="categories">
+    <div class="container clearfix">
+        <h1>Browse Work by Category</h1>
+        <ul class="categories">
+            <li class="performance" style="background-image:url(/gkp/assets/img/livemusic-437px.jpg)">
+                <ul>
+                    <li class="category-title">Live Music</li>
+                    <li class="category-link"><a href="/gkp/portfolio/live-music">View More ></a></li>
+                </ul>
+            </li>
+            <li class="performance" style="background-image:url(/gkp/assets/img/performance-437px.jpg)">
+                <ul>
+                    <li class="category-title">Performance</li>
+                    <li class="category-link"><a href="/gkp/portfolio/performance">View More ></a></li>
+                </ul>
+            </li>
+            <li class="performance" style="background-image:url(/gkp/assets/img/fashion-437px.jpg)">
+                <ul>
+                    <li class="category-title">Fashion</li>
+                    <li class="category-link"><a href="/gkp/portfolio/fashion">View More ></a></li>
+                </ul>
+            </li>
+            <li class="performance" style="background-image:url(/gkp/assets/img/editorial-437px.jpg)">
+                <ul>
+                    <li class="category-title">Editorial</li>
+                    <li class="category-link"><a href="/gkp/portfolio/editorial">View More ></a></li>
+                </ul>
+            </li>
+            <li class="performance" style="background-image:url(/gkp/assets/img/observation-437px.jpg)">
+                <ul>
+                    <li class="category-title">Observation</li>
+                    <li class="category-link"><a href="/gkp/portfolio/observation">View More ></a></li>
+                </ul>
+            </li>
+            <li class="cta"><a href="/gkp/contact">Let&#8217;s Work Together</a></li>
+        </ul>
+    </div>
+</div>
+<div id="footer">
+    <footer class="clearfix">
+        <h1 ><img src="/gkp/_themes/gkp/img/logo-footer.svg" width="200" height="32" alt="Gretchen Kelley Photography Logo" /></h1>        
+        <ul>
+            <li><a href="/gkp/portfolio">Portfolio</a>
+                <ul class="sub-nav">
+                    <li><a href="/gkp/portfolio/live-music">Live Music</a></li>
+                    <li><a href="/gkp/portfolio/performance">Performance</a></li>
+                    <li><a href="/gkp/portfolio/fashion">Fashion</a></li>
+                    <li><a href="/gkp/portfolio/editorial">Editorial</a></li>
+                    <li><a href="/gkp/portfolio/observation">Observation</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="/gkp/contact">Contact</a>
+                <ul class="sub-nav contact">
+                    <li><a href="mailto:info@gretchenkelleyphotography.com">info@gretchenkelleyphotography.com</a></li>
+                    <li>(651) 894-5524</li>
+                </ul>
+            </li>
+        </ul>
+        <section class="legal">
+            <p>copyright &copy; 2014 all rights reserved</p>
+        </section>
+    </footer>
+</div>
+
+
+
+<script src="/gkp/_themes/gkp/js/gkp.js"></script>
+</body>
+</html>

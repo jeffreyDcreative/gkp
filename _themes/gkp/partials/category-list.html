@@ -1,0 +1,18 @@
+<div id="categories">
+    <div class="container clearfix">
+{{ get_content from="/site-wide" show_hidden="true"}}
+        <h1>{{ category_list_heading }}</h1>
+        <ul class="categories">
+{{ pages:listing from="portfolio" }}
+            <li class="performance" style="background-image:url({{ category_image }})">
+                <ul>
+                    <li class="category-title">{{ category_name }}</li>
+                    <li class="category-link"><a href="{{ url }}">{{ category_cta }}</a></li>
+                </ul>
+            </li>
+{{ /pages:listing }}{{ killwhite }}
+{{ /killwhite }}            <li class="cta"><a href="{{ path src="contact" }}">{{ cta_button_text }}</a></li>
+{{ /get_content }}{{ killwhite }}
+{{ /killwhite }}        </ul>
+    </div>
+</div>

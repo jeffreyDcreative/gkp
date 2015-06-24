@@ -1,0 +1,24 @@
+title: Category Details
+hide: true
+fields:
+  category_name_section:
+    type: section
+    display: Category Details
+  category_name:
+    type: text
+    display: Category Name
+    required: true
+  category_cta:
+    type: text
+    display: Category Link Text
+    default: "View More >"
+    required: true
+    instructions:
+      below: This field enables you to change the text beneath the Category Name. The default is "View More >"
+  category_image:
+    type: file
+    display: Thumbnail
+    destination: assets/img
+    show_thumbnail: true
+
+

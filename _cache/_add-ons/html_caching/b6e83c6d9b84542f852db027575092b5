@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<!-- <base href="http://localhost/gretchenkelley/design/" /> -->
+    <title>Contact &mdash; Gretchen Kelley Photography</title>
+    <meta name="description" content="Gretchen Kelley is an experienced photographer ready to photograph your next live event, concerts or theatrical performance. To hire her as your event photographer, fill out the contact form.">
+    <link rel="apple-touch-icon" sizes="114x114" href="/gkp//apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="/gkp//favicon.ico"/>
+    <meta name="msapplication-TileColor" content="#603cba"><meta name="msapplication-TileImage" content="/gkp//mstile-144x144.png">
+	<link href="/gkp/_themes/gkp/css/reset.css" rel="stylesheet" type="text/css">
+	<link href="/gkp/_themes/gkp/css/flexslider.css" rel="stylesheet" type="text/css">
+	<link href="/gkp/_themes/gkp/css/sub-slider.css" rel="stylesheet" type="text/css">
+	<link href="/gkp/_themes/gkp/css/novecento-webfont.css" rel="stylesheet" type="text/css">
+	<link href="/gkp/_themes/gkp/css/gkp.css" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="/gkp/_themes/gkp/js/jquery.flexslider.js"></script>
+</head>
+<body>
+<!-- Navigation -->
+<div id="header">
+    <div class="container has-sub-nav">
+        <nav role="navigation">
+            <h1><a href="/gkp/"><img class="logo" src="/gkp/_themes/gkp/img/gkp.svg" alt="Gretchen Kelley Photography" width= "363" height="14"></a></h1>
+            <ul id="nav">
+                <li><a href="/gkp/contact" class="selected">Contact</a></li>
+                <li><a href="/gkp/portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!-- Home Page -->
+<!-- Portfolio -->
+<!-- Contact Page -->
+<div id="page-title" style="background-image: url('/gkp/assets/img/page-title-bg_contact.jpg')">
+        <h2>Contact</h2>
+</div>
+<div id="main" class="contact">
+    <div class="container clearfix">
+        <div class="form-container">
+            <form method='post'  >
+<input type='hidden' name='hidden[raven]' value='1' />
+<input type='hidden' name='hidden[formset]' value='contact-page' />
+<input type='hidden' name='hidden[return]' value='/gkp/contact' />
+<input type='hidden' name='hidden[error_return]' value='/gkp/contact' />
+
+            <fieldset>
+                <label>Name:</label>
+                <input type="text" name="name" placeholder="Jane Doe" value="">
+
+                <label >Email:</label>
+                <input type="text" name="email" placeholder="email@emailaddress.com" value="">
+                        
+                <label>Phone:</label>
+                <input type="text" name="phone" placeholder="312-555-5555" >
+
+                <label >Message:</label>
+                <textarea name="message" placeholder="Briefly describe your photography needs here and I will get back to you."></textarea>
+                     
+                <input type="submit" value="Send Message">
+            </fieldset>
+        </form>
+        </div>
+        <aside>
+            <img src='/gkp/assets/img/gretchen-selfie.jpg' />
+            <h3>About</h3>
+            <p>Gretchen Kelley Photography exudes a passion for people and their stories, which make each photographic experience unique from the next. Beginning with a B.A. in Photography, in addition to the apprenticeships with a variety of independent photographers, as well as managing a commercial portrait studio, Gretchen promises the experience of a sincere and professional artist. The specific needs of each client are deeply important to her. Gretchen strives to meet these needs through accomplished artistic and personal skills and the results will leave you with truly amazing photographs.</p>
+            <h3>email</h3>
+            <p><a href="mailto:info@gretchenkelleyphotography.com"> info@gretchenkelleyphotography.com </a></p>
+            <h3>phone</h3>
+            <p>(651) 894-5524</p>
+        </aside>
+    </div>
+</div>
+<!-- Standard Page -->
+
+<!-- Category List and Footer Appear on All Pages -->
+<div id="categories">
+    <div class="container clearfix">
+        <h1>Browse Work by Category</h1>
+        <ul class="categories">
+            <li class="performance" style="background-image:url(/gkp/assets/img/livemusic-437px.jpg)">
+                <ul>
+                    <li class="category-title">Live Music</li>
+                    <li class="category-link"><a href="/gkp/portfolio/live-music">View More ></a></li>
+                </ul>
+            </li>
+            <li class="performance" style="background-image:url(/gkp/assets/img/performance-437px.jpg)">
+                <ul>
+                    <li class="category-title">Performance</li>
+                    <li class="category-link"><a href="/gkp/portfolio/performance">View More ></a></li>
+                </ul>
+            </li>
+            <li class="performance" style="background-image:url(/gkp/assets/img/fashion-437px.jpg)">
+                <ul>
+                    <li class="category-title">Fashion</li>
+                    <li class="category-link"><a href="/gkp/portfolio/fashion">View More ></a></li>
+                </ul>
+            </li>
+            <li class="performance" style="background-image:url(/gkp/assets/img/editorial-437px.jpg)">
+                <ul>
+                    <li class="category-title">Editorial</li>
+                    <li class="category-link"><a href="/gkp/portfolio/editorial">View More ></a></li>
+                </ul>
+            </li>
+            <li class="performance" style="background-image:url(/gkp/assets/img/observation-437px.jpg)">
+                <ul>
+                    <li class="category-title">Observation</li>
+                    <li class="category-link"><a href="/gkp/portfolio/observation">View More ></a></li>
+                </ul>
+            </li>
+            <li class="cta"><a href="/gkp/contact">Let&#8217;s Work Together</a></li>
+        </ul>
+    </div>
+</div>
+<div id="footer">
+    <footer class="clearfix">
+        <h1 ><img src="/gkp/_themes/gkp/img/logo-footer.svg" width="200" height="32" alt="Gretchen Kelley Photography Logo" /></h1>        
+        <ul>
+            <li><a href="/gkp/portfolio">Portfolio</a>
+                <ul class="sub-nav">
+                    <li><a href="/gkp/portfolio/live-music">Live Music</a></li>
+                    <li><a href="/gkp/portfolio/performance">Performance</a></li>
+                    <li><a href="/gkp/portfolio/fashion">Fashion</a></li>
+                    <li><a href="/gkp/portfolio/editorial">Editorial</a></li>
+                    <li><a href="/gkp/portfolio/observation">Observation</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="/gkp/contact">Contact</a>
+                <ul class="sub-nav contact">
+                    <li><a href="mailto:info@gretchenkelleyphotography.com">info@gretchenkelleyphotography.com</a></li>
+                    <li>(651) 894-5524</li>
+                </ul>
+            </li>
+        </ul>
+        <section class="legal">
+            <p>copyright &copy; 2014 all rights reserved</p>
+        </section>
+    </footer>
+</div>
+
+
+
+<script src="/gkp/_themes/gkp/js/gkp.js"></script>
+</body>
+</html>

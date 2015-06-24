@@ -1,0 +1,38 @@
+{{ if {raven:has_errors} }} 
+{{ raven:errors }}
+{{ missing }}
+{{ if field == "name" }}
+class="error"
+{{ endif }}
+{{ /missing }}
+{{ invalid }}
+{{ if field == "name" }}
+class="error"
+{{ endif }}
+{{ /invalid }}
+{{ /raven:errors }}
+{{ endif }}
+
+
+{{ if {raven:has_errors} }} 
+
+
+
+NAME
+========
+
+
+{{ if {raven:has_errors} }} 
+{{ raven:errors }}
+{{ missing }}
+{{ if field == "name" }}
+class="error" value="{{ value:name }}"><p class="error">Please Enter a {{ form_label }}</p> {{ else }} >
+{{ endif }}
+{{ /missing }}
+{{ invalid }}
+{{ if field == "name" }}
+class="error" value="{{ value:name }}"><p class="error">Please Enter a {{ form_label }}</p> {{ else }} >
+{{ endif }}
+{{ /invalid }}
+{{ /raven:errors }}
+{{ endif }}

@@ -1,0 +1,15 @@
+    <div id="main" class="contact">
+        <div class="container clearfix">
+         <aside class="standard">
+<ul>
+{{ nav from="/{segment_1}" max_depth="2" folders_only="false" }}   
+<li {{ if is_current }}class="active"{{ endif }}><a href="{{ url }}">{{ title }}</a></li>
+{{ /nav }}
+</ul>
+        </aside>
+        	<div class="standard">
+{{ page_content }}
+        	</div>
+       
+		</div>
+	</div>

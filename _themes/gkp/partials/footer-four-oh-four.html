@@ -1,0 +1,51 @@
+<div id="footer" class="four-oh-four">
+    <footer class="clearfix">
+        <h1 {{ if { nav:count from="/" max_depth="1" } > 2 }}style="margin-right:105px"{{ /if }}><img src="{{ theme:img src="logo-footer.svg" }}" width="200" height="32" alt="Gretchen Kelley Photography Logo" /></h1>{{ killwhite }}
+        {{ /killwhite }}{{ nav from="/" max_depth="2" folders_only="true" }}
+{{ if title !== "Contact" }}
+        
+        <ul>
+            <li><a href="{{ url }}">{{ title }}</a>
+{{ if children }}
+                <ul class="sub-nav">
+{{ children }}
+                    <li><a href="{{ url }}">{{ title }}</a></li>
+{{/children}}{{ killwhite }}
+{{ /killwhite }}                </ul>
+{{ endif }}
+            </li>
+        </ul>{{/if}}
+{{/nav}}
+{{ nav from="/" max_depth="2" folders_only="true" }}
+{{ if title === "Contact" }}
+        <ul>
+            <li><a href="{{ url }}">{{ title }}</a>{{ endif }}
+{{ /nav }}
+{{ get_content from="/contact" }}
+{{ contact_methods }}
+{{ if first }}
+                <ul class="sub-nav contact">
+{{ endif }}{{ killwhite }}
+{{ /killwhite }}                    <li>{{ killwhite }}
+                        {{ if contact_method_heading_type === "email" and contact_method_display === "1" }}
+                            <a href="mailto:{{ contact_method_details|widont }}">{{ contact_method_details }}</a>
+                        {{ endif }}
+                        {{ if contact_method_heading_type === "link" and contact_method_display === "1" }}
+                            <a href="{{ contact_method_link|widont }}">{{ contact_method_details }}</a>
+                        {{ endif }}
+                        {{ if contact_method_display === "1" && contact_method_heading_type !== "link" && contact_method_heading_type !== "email" }}
+                            {{ contact_method_details }}
+                        {{ endif }}
+                        {{ /killwhite }}</li>
+{{ if last }}
+                </ul>{{ killwhite }}
+{{ /killwhite }}{{ /if }}
+{{ /contact_methods }}
+{{ /get_content }}{{ killwhite }}
+{{ /killwhite }}            </li>
+        </ul>
+        <section class="legal">
+            <p>copyright &copy; {{ current_date format="Y" }} all rights reserved</p>
+        </section>
+    </footer>
+</div>

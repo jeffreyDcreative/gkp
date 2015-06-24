@@ -1,0 +1,106 @@
+hide: true
+fields:
+  meta_section:
+    type: section
+    display: Contact Form
+    instructions: Update Label & Helper text for the Form Fields
+
+  contact_form_name:
+    display: ""
+    type: grid
+    min_rows: 1
+    max_rows: 1
+    fields:
+      form_label:
+        type: text
+        display: Name Label
+        instructions: "This field controls the label text for the Name Field (default Name:)"
+        default: "Name:"
+        required: true
+        width: 50%
+      form_default:
+        type: text
+        display: Default Name Text
+        default: Jane Doe
+        instructions: This is the helper text that appears inside the Name form field
+        required: true
+        width: 50%
+
+  contact_form_email:
+    display: ""
+    type: grid
+    min_rows: 1
+    max_rows: 1
+    fields:
+      form_label:
+        type: text
+        display: Email Label
+        instructions: "This field controls the label text for the Email Field (default Email:)"
+        default: "Email:"
+        required: true
+        width: 50%
+      form_default:
+        type: text
+        display: Default Email Text
+        default: email@emailaddress.com
+        instructions: This is the helper text that appears inside the Name form field
+        required: true
+        width: 50%
+  contact_form_phone:
+    display: ""
+    type: grid
+    min_rows: 1
+    max_rows: 1
+    fields:
+      form_label:
+        type: text
+        display: Phone Number Label
+        instructions: "This field controls the label text for the Phone # Field (default Phone:)"
+        default: "Phone:"
+        required: true
+        width: 50%
+      form_default:
+        type: text
+        display: Default Phone Number Text
+        default: 312-555-5555
+        instructions: This is the helper text that appears inside the Phone Number form field
+        required: true
+        width: 50%
+  contact_form_message:
+    display: ""
+    type: grid
+    min_rows: 1
+    max_rows: 1
+    fields:
+      form_label:
+        display: Message Area Label
+        type: text
+        default: "Message:"
+        instructions: "This field controls the label text for the Message Field (default Message:)"
+      form_default:
+        display: Message Area Default Text
+        type: textarea
+        default: Briefly describe your photography needs here and I will get back to you.
+        instructions: This is the helper text that appears inside the Message form field
+        width: 49%
+  contact_form_button_text:
+    display: Submit Button Text
+    type: text
+    default: Send Message
+    instructions:
+      below: "This is the text that will appear inside the button (Send Message, Send, Submit, etc)"
+  contact_form_success:
+    type: section
+    display: Success Message
+    instructions: This is the content people will see when they successfully submit a form
+  contact_form_success_title:
+    display: Success Title
+    type: text
+    default: Success!
+    instructions:
+      below: This is the title text displayed when a form as successfully been submitted
+  contact_form_success_details:
+    display: Success Message
+    type: textarea
+    default: Thank you for reaching out. I try to respond to all inquiries within two business days. If you are working on a tight deadline and need a same-day response, please call (651) 894-5524 and I’ll do my best to accomodate your requests.
+    instructions: This is the message people will see when they successfully submit a form

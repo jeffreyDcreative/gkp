@@ -1,0 +1,181 @@
+<div id="main" class="contact">
+    <div class="container clearfix">
+        <div class="form-container">
+            {{ raven:form formset="contact-page" }}
+{{ if {raven:success} }}
+            <div class="success">
+                <h2>{{ contact_form_success_title }}</h2>
+                <p>{{ contact_form_success_details }}</p>
+            </div>
+                {{ else }}
+            <fieldset>
+{{ contact_form_name }}
+                <label{{ killwhite }}
+                    {{ if {raven:has_errors} }}
+                        {{ raven:errors }}
+                            {{ missing }}
+                                {{ if field == "name" }}
+                                    class="error"
+                                {{ endif }}
+                            {{ /missing }}
+                            {{ invalid }}
+                                {{ if field == "name" }}
+                                    class="error"
+                                {{ endif }}
+                            {{ /invalid }}
+                        {{ /raven:errors }}
+                    {{ endif }}>{{ form_label }}</label>{{ /killwhite }}
+                {{ killwhite }}<input type="text" name="name" placeholder="{{ form_default }}"
+                        {{ if {raven:has_errors} }}
+                            {{ raven:errors }}
+                                {{ missing }}
+                                    {{ if field == "name" }}
+                                            class="error"
+                                    {{ endif }}
+                                {{ /missing }}
+                                {{ invalid }}
+                                    {{ if field == "name" }}
+                                            class="error"
+                                    {{ endif }}
+                                {{ /invalid }}
+                            {{ /raven:errors }}
+                        {{ endif }}
+                        value="{{ value:name }}">{{ /killwhite }}{{ killwhite }}
+                        {{ if {raven:has_errors} }}
+                            {{ raven:errors }}
+                                {{ missing }}
+                                    {{ if field == "name" }}
+                                    <p class="error">Please Enter your Name</p>
+                                    {{ endif }}
+                                {{ /missing }}
+                                {{ invalid }}
+                                    {{ if field == "name" }}
+                                    <p class="error">Please Enter a Valid Name</p>
+                                    {{ endif }}
+                                {{ /invalid }}
+                            {{ /raven:errors }}
+                        {{ endif }}{{ /killwhite }}
+{{ /contact_form_name }}
+{{ contact_form_email }}
+                <label {{ killwhite }}
+                        {{ if {raven:has_errors} }}
+                            {{ raven:errors }}
+                                {{ missing }}
+                                    {{ if field == "email" }}
+                                            class="error"
+                                    {{ endif }}
+                                {{ /missing }}
+                                {{ invalid }}
+                                    {{ if field == "email" }}
+                                            class="error"
+                                    {{ endif }}
+                                {{ /invalid }}
+                            {{ /raven:errors }}
+                        {{ endif }}
+                    >{{ form_label }}</label>{{ /killwhite }}
+                <input type="text" name="email" placeholder="{{ form_default }}" {{ killwhite }}
+                        {{ if {raven:has_errors} }}
+                            {{ raven:errors }}
+                                {{ missing }}
+                                    {{ if field == "email" }}
+                                            class="error"
+                                    {{ endif }}
+                                {{ /missing }}
+                                {{ invalid }}
+                                    {{ if field == "email" }}
+                                            class="error"
+                                    {{ endif }}
+                                {{ /invalid }}
+                            {{ /raven:errors }}
+                        {{ endif }}
+                        value="{{ value:email }}">{{ /killwhite }}
+                        {{ if {raven:has_errors} }}
+                            {{ raven:errors }}
+                                {{ missing }}
+                                    {{ if field == "email" }}
+                                            <p class="error">Please enter your email address</p>
+                                    {{ endif }}
+                                {{ /missing }}
+                                {{ invalid }}
+                                    {{ if field == "email" }}
+                                            <p class="error">Please Enter a Valid Email Address (email@email.com)</p>
+                                    {{ endif }}
+                                {{ /invalid }}
+                            {{ /raven:errors }}
+                        {{ endif }}
+{{ /contact_form_email }}
+{{ contact_form_phone }}
+                <label>{{ form_label }}</label>
+                <input type="text" name="phone" placeholder="{{ form_default }}" {{ if {raven:has_errors} }} value="{{ value:phone }}" {{ endif }}>
+{{ /contact_form_phone }}
+{{ contact_form_message }}
+                <label {{ killwhite }}
+                        {{ if {raven:has_errors} }}
+                            {{ raven:errors }}
+                                {{ missing }}
+                                    {{ if field == "message" }}
+                                            class="error"
+                                    {{ endif }}
+                                {{ /missing }}
+                                {{ invalid }}
+                                    {{ if field == "message" }}
+                                            class="error"
+                                    {{ endif }}
+                                {{ /invalid }}
+                            {{ /raven:errors }}
+                        {{ endif }}>{{ form_label }}</label>{{ /killwhite }}
+                <textarea name="message" {{ killwhite }}
+                        {{ if {raven:has_errors} }}
+                            {{ raven:errors }}
+                                {{ missing }}
+                                    {{ if field == "message" }}
+                                            class="error"
+                                    {{ endif }}
+                                {{ /missing }}
+                                {{ invalid }}
+                                    {{ if field == "message" }}
+                                            class="error"
+                                    {{ endif }}
+                                {{ /invalid }}
+                            {{ /raven:errors }}
+                        {{ endif }}
+                     placeholder="{{ form_default }}">{{ if {raven:has_errors} }}{{ value:message }}{{ endif }}</textarea>{{ /killwhite }}
+                     {{ if {raven:has_errors} }}
+                            {{ raven:errors }}
+                                {{ missing }}
+                                    {{ if field == "message" }}
+                                            <p class="error">Please add a brief message</p>
+                                    {{ endif }}
+                                {{ /missing }}
+                                {{ invalid }}
+                                    {{ if field == "message" }}
+                                            <p class="error">Please Enter a Valid Message</p>
+                                    {{ endif }}
+                                {{ /invalid }}
+                            {{ /raven:errors }}
+                        {{ endif }}
+{{ /contact_form_message }}
+                <input type="submit" value="{{ contact_form_button_text }}">
+            </fieldset>
+{{ endif }}
+        {{ /raven:form }}
+        </div>
+        <aside>
+            <img src='{{ about_photo }}' />
+            <h3>{{ about_title }}</h3>
+            <p>{{ about_content }}</p>
+{{ contact_methods }}
+            <h3>{{ contact_method_heading }}</h3>
+            <p>{{ killwhite }}{{ if contact_method_heading_type === "email" }}
+                    <a href="mailto:{{ contact_method_details|widont }}">
+                    {{ endif }}
+                    {{ if contact_method_heading_type === "link" }}
+                    <a href="{{ contact_method_link|widont }}">
+                    {{ endif }}
+                    {{ contact_method_details }}
+                    {{ if contact_method_heading_type === "email" || contact_method_heading_type === "link" }}</a>
+                    {{ endif }}{{ /killwhite }}</p>
+{{ /contact_methods }}{{ killwhite }}
+{{ /killwhite }}        </aside>
+    </div>
+</div>

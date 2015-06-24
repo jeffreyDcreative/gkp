@@ -1,0 +1,4 @@
+hide: true
+fields:
+  slug:
+    hide: true

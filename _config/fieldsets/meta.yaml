@@ -1,0 +1,22 @@
+hide: true
+
+fields:
+  meta_sections:
+    type: section
+    display: Meta Section
+    instructions:
+      below: "Use these fields if you want to override the default meta tags and standard page title."
+  meta_title:
+    display: Page Meta Title
+    type: limited
+    limit: 70
+    instructions:
+      below: "(NOTE: ONLY NECESSARY IF YOU WANT TO OVERRIDE NORMAL PAGE TITLE) Enter the page title to display in search engine results."
+  meta_description:
+    display: Page Meta Description
+    type: limited
+    limit: 250
+    instructions:
+      below: "Enter a short description to display in search engine results roughly 155 characters."
+
+# These are the meta fields which enable you to add a meta title and description used by search engines.

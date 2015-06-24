@@ -1,0 +1,12 @@
+<div id="header">
+    <div class="container has-sub-nav">
+        <nav role="navigation">
+            <h1><a href="{{ _site_root }}"><img class="logo" src="{{ theme:img src="gkp.svg" }}" alt="Gretchen Kelley Photography" width= "363" height="14"></a></h1>
+            <ul id="nav">
+{{ nav from="/" max_depth="1" }}
+                <li>{{ killwhite }}<a href="{{ url }}"{{ if is_parent || is_current }} class="selected"{{ /if }}>{{ title }}</a>{{ /killwhite }}</li>
+{{ /nav }}{{ killwhite }}
+{{ /killwhite }}            </ul>
+        </nav>
+    </div>
+</div>

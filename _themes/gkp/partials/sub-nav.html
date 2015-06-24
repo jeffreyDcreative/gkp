@@ -1,0 +1,13 @@
+<div id="sub-nav">
+    <div class="container clearfix">
+        <ul>
+{{ nav from="/{ segment_1}" max_depth="1" include_content="true" exclude="/site-wide"}}
+{{ if segment_2 }}
+            <li>{{ killwhite }}<a {{if is_current }}class="active" href="#"{{ /if }} href="{{ url }}">{{ title }}</a>{{ /killwhite }}</li>
+{{ /if }}
+{{ if !segment_2 }}
+            <li>{{ killwhite }}<a {{ if first }} class="active"{{ /if }} href="{{ url }}">{{ title }}</a>{{ /killwhite }}</li>
+{{ /if }}{{ /nav }}{{ killwhite }}
+{{ /killwhite }}        </ul>
+    </div>
+</div>

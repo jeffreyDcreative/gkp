@@ -1,0 +1,25 @@
+hide: true
+fields:
+  about_section:
+    type: section
+    display: About Section
+    instructions: This controls the bio section on the contact page
+  about_photo:
+    display: Bio Photo
+    instructions:
+      - below: Required dimensions 320x156px
+    type: file
+    allowed: [png, gif, jpg, jpeg]
+    destination: assets/img
+    default: '{{ _site_root }}assets/img/gretchen-selfie.jpg'
+  about_title:
+    type: text
+    display: About Heading
+    default: About
+  about_content:
+    type: textarea
+    display: About Bio
+    default: Gretchen Kelley Photography exudes a passion for people and their stories, which make each photographic experience unique from the next. Beginning with a B.A. in Photography, in addition to the apprenticeships with a variety of independent photographers, as well as managing a commercial portrait studio, Gretchen promises the experience of a sincere and professional artist. The specific needs of each client are deeply important to her. Gretchen strives to meet these needs through accomplished artistic and personal skills and the results will leave you with truly amazing photographs.
+    instructions:
+      above: Add your bio here
+

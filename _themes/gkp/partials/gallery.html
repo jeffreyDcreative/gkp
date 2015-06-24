@@ -1,0 +1,10 @@
+<div class"flex-container">
+{{ if !gallery }}
+{{ pages:listing from="/portfolio"  limit="1" }}
+{{ theme:partial src="gallery-main" use_context = "true" }}{{ theme:partial src="gallery-thumbs" use_context = "true" }}{{ killwhite }}
+{{ /killwhite }}{{ /pages:listing }}
+{{ endif }}
+{{ if gallery }}
+{{ theme:partial src="gallery-main" }}{{ theme:partial src="gallery-thumbs" }}
+{{ endif }}{{ killwhite }}
+{{ /killwhite }}</div>
